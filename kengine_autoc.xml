@@ -1,0 +1,55 @@
+<tool id="KEautoComplete" name="Ontology for Clinical Science" version="0.1">
+   <requirements>
+      <requirement type="package" version=""></requirement>
+   </requirements>
+   <description>is an ontology of entities involved in clinical science </description>
+   <command interpreter="python"> 
+    kengine_autoc.py
+   </command>
+  <inputs>
+   <page>
+
+        <param name="in_entry" label="Treatment of Disease and Diagnosis" type="text" size="5x100" value="diagnosis" area="True"/>
+        <param name="auto_comp_entry" label="Structures, Patterns from Medical Entities" type="text" size="5x100" value="Tumors" area="True"/>
+        
+        <label id="MyScript"><![CDATA[
+        <script type="text/javascript">
+        alert("Hello Galaxy");
+        </script>
+        ]]></label>
+
+   </page>
+  </inputs>
+
+  <outputs>
+   <data format="txt" name="output"  label="Medical report" />
+  </outputs>
+
+  <help>
+
+**Note**
+
+Exploring Cancer Disease Ontologies
+ 
+**What it does**
+
+Collect clinical phenotype ontology terms to the specific diseases. 
+
+**Example**
+
+------
+
+**Licenses**
+
+------
+
+**Attribution**
+
+This wrapper is released licensed under the LGPL_
+
+.. _LGPL: http://www.gnu.org/copyleft/lesser.html
+
+  </help>
+
+</tool>
+
