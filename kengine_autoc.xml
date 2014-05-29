@@ -1,22 +1,27 @@
 <tool id="KEautoComplete" name="Ontology for Clinical Science" version="0.1">
+        <label id="MyScript"><![CDATA[
+        <script type="text/javascript">
+        alert("Hello Galaxy");
+        </script>
+        ]]></label>
    <requirements>
       <requirement type="package" version=""></requirement>
    </requirements>
    <description>is an ontology of entities involved in clinical science </description>
+
+   <script type="text/javascript">
+   // <![CDATA[
+       alert(1);
+       // ]]>
+   </script>
    <command interpreter="python"> 
     kengine_autoc.py
    </command>
   <inputs>
    <page>
 
-        <param name="in_entry" label="Treatment of Disease and Diagnosis" type="text" size="5x100" value="diagnosis" area="True"/>
-        <param name="auto_comp_entry" label="Structures, Patterns from Medical Entities" type="text" size="5x100" value="Tumors" area="True"/>
-        
-        <label id="MyScript"><![CDATA[
-        <script type="text/javascript">
-        alert("Hello Galaxy");
-        </script>
-        ]]></label>
+        <param name="in_entry" label="Treatment of Disease and Diagnosis" type="text" size="5x100" value="A swelling of a part of the body, generally without inflammation" area="True"/>
+        <param name="auto_comp_entry" label="Structures, Patterns from Medical Entities" type="text" size="5x100" value="Tumor" area="True"/>
 
    </page>
   </inputs>
@@ -33,13 +38,9 @@ Exploring Cancer Disease Ontologies
  
 **What it does**
 
-Collect clinical phenotype ontology terms to the specific diseases. 
+Collect clinical phenotype ontology terms to specific diseases. 
 
 **Example**
-
-------
-
-**Licenses**
 
 ------
 
